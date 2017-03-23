@@ -24,4 +24,12 @@ require('pry')
       expect(("I(Kevin) am a rockstar!I am goooood!").word_count('i')).to eq(2)
     end
 
+    it("count number of I in sentence and inside words") do
+      expect(("I am interested in yomama and wii").count_everything('i')).to eq(5)
+    end
+
+    it("count number of is in sentence and insite words") do
+      expect(("You belive in islam? Ian exclaimed blissfully").count_everything('is')).to eq(2)
+    end
+
   end
