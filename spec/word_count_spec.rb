@@ -25,11 +25,15 @@ require('pry')
     end
 
     it("count number of I in sentence and inside words") do
-      expect(("I am interested in yomama and wii").count_everything('i')).to eq(5)
+      expect(("I am interested in yomama and wii").count_everything('i')).to eq(4)
     end
 
     it("count number of is in sentence and insite words") do
       expect(("You belive in islam? Ian exclaimed blissfully").count_everything('is')).to eq(2)
+    end
+
+    it("count number of I in sentence and inside words") do
+      expect(("I’m taking my cat on a walk through the catacombs").count_everything('cat')).to eq(2)
     end
 
   end

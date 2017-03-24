@@ -9,6 +9,6 @@ require('capybara/rspec')
       fill_in('sentence', :with => 'I am happy, i like fruits')
       fill_in('word', :with => 'I')
       click_button('Send')
-      expect(page).to have_content("The word \"I\" appeared 2 times The word \"I\" appeared 6 times in comprehensive mode")
+      expect(page).to have_content("The word \"I\" appeared 2 times The word \"I\" appeared 4 times in comprehensive mode")
     end
   end
